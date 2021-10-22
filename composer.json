@@ -1,0 +1,25 @@
+{
+    "name":         "unsized/crawl",
+    "description":  "Tools for screensraping. Example autologin to BT Broadband wifi hotspots and keep alive",
+    "license":      "MIT",
+    "type":         "library",
+    "authors": [
+            {
+                "name":     "Clive Turner",
+                "email":    "clive@unsized.uk",
+                "homepage": "https://unsized.uk",
+                "role":     "Developer"
+            }
+        ],
+
+    "autoload": {
+        "psr-4": {
+            "unsized\\crawl\\": "src/"
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7|^8"
+    }
+}

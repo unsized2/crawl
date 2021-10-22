@@ -1,4 +1,4 @@
-<?php namespace Unsized\Crawl;
+<?php namespace unsized\crawl;
 
 
 class Crawl{
