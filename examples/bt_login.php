@@ -13,11 +13,11 @@ $live->curlInit();
 
 $web_page=$live->getWebPage($bt_home);
 
-if ( str_contains($web_page, "now logged on to BT") ){
+if ( strpos($web_page, "now logged on to BT") ){
   echo '<h1>now logged on to BT</h1>';
   }
 
-elseif ( str_contains($web_page, "You may have lost your connection to the BTWiFi signal")){
+elseif ( strpos($web_page, "You may have lost your connection to the BTWiFi signal")){
   echo "<p>Not connected to BT Broadband - Check wifi connection</p>";
 }
 else{ //we are not logged in to BT, so try to login
@@ -38,7 +38,7 @@ echo "<p>- Attempting to connection login to BT Broadband</p>";
   $bt->postForm($fields, $target_url);
 
   //check if we are logged in
-  if ( str_contains($live->getWebPage($bt_home), "now logged on to BT") ){
+  if ( strpos($live->getWebPage($bt_home), "now logged on to BT") ){
     echo '<h4>Now logged on to BT</h4>';
     }
 }
