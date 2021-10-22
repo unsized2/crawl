@@ -72,15 +72,15 @@ function curlClose()
 					}
 			}
 
-/******* possible deprecation below here ******/
+
+
+/******* deprecated below here - use at own risk******/
 
 
 function getinfo()
 {
 echo $status = curl_getinfo($this->ch, CURLINFO_HTTP_CODE);
 	}
-
-
 
 
 function getFormElements($element,$by='name')
